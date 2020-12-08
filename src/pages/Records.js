@@ -8,7 +8,6 @@ import {
 } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import PageHeader from "../components/PageHeader";
-import ScoutList from "../ScoutList";
 import RecordForm from "./RecordForm";
 import { firestore } from "../config/fire";
 import useTable from "../components/useTable";
@@ -43,12 +42,11 @@ export default function Records() {
   return (
     <>
       <PageHeader
-        title="Scouting Record"
+        title="Scouting Records"
         subTitle="Enter your farm scouting records"
       />
       <Paper className={classes.pageContent}>
         <RecordForm addOrEdit={addOrEdit} />
-        <ScoutList />
         <TblContainer>
           <TableHead>
             <TableRow>
