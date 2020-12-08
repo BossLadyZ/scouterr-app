@@ -1,0 +1,6 @@
+react-redux ==  npm install react-redux
+react router dom == npm install --save react-router-dom
+redux-form ==npm install --save redux-form
+
+
+Firebase ==npm install --save Firebase
